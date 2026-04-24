@@ -13,32 +13,32 @@ type CaseItem = {
 
 const CASES: CaseItem[] = [
   {
-    eye: "Fintech · 2024",
-    title: "Cross-border settlement for an NBFC",
-    stat: "₹240Cr",
-    statLabel: "Monthly volume",
-    name: "Finhaven",
+    eye: "Web3",
+    title: "DEXes, AMMs & order-book exchanges",
+    stat: "On-chain",
+    statLabel: "EVM · Solana · L2s",
+    name: "DEXes",
   },
   {
-    eye: "AI Agents · 2025",
-    title: "Arabic voice agent for a GCC bank",
-    stat: "71%",
-    statLabel: "First-contact resolution",
-    name: "Bayan",
+    eye: "Web3",
+    title: "Launchpads, staking, vaults & bridges",
+    stat: "L1+L2",
+    statLabel: "Built to scale",
+    name: "Platforms",
   },
   {
-    eye: "Web3 · 2023",
-    title: "Self-custody wallet for a top L2",
-    stat: "11wk",
-    statLabel: "Design to App Store",
-    name: "Chainroot",
+    eye: "AI",
+    title: "Chatbots, voice agents & copilots",
+    stat: "Multi-LLM",
+    statLabel: "Model-agnostic",
+    name: "Agents",
   },
   {
-    eye: "Fintech · 2025",
-    title: "KYC re-platform for a Gulf super-app",
-    stat: "4.2M",
-    statLabel: "Users onboarded",
-    name: "Noor",
+    eye: "Bots",
+    title: "Telegram & Discord — trading, ops, community",
+    stat: "Always-on",
+    statLabel: "Built where users live",
+    name: "Bots",
   },
 ];
 
@@ -55,8 +55,8 @@ export function CaseStudies() {
           viewport={{ once: true }}
           transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
         >
-          <div className="wn-eyebrow">Selected work</div>
-          <h2 className="wn-section-title">Recent case studies</h2>
+          <div className="wn-eyebrow">Capabilities</div>
+          <h2 className="wn-section-title">What we ship.</h2>
         </motion.div>
         <div className="wn-cases">
           {CASES.map((c, i) => (

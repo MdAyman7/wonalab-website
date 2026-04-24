@@ -14,10 +14,10 @@ export function CTA({ onContact }: { onContact: () => void }) {
         transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
       >
         <h2 className="wn-cta-title">
-          Have a brief? <em>Send it over.</em>
+          Building something at the edge? <em>Tell us.</em>
         </h2>
         <p className="wn-cta-body">
-          We read every message. Most projects start with a 45-minute call within the week.
+          DEX, AI agent, OpenClaw integration, bot army — if it's web3, AI, or both, we want to see it. First call within 48 hours.
         </p>
         <a className="wn-btn wn-btn-primary wn-btn-lg" onClick={onContact}>
           Start a project <span className="wn-arrow">→</span>

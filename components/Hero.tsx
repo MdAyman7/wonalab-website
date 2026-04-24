@@ -11,7 +11,7 @@ import {
 } from "framer-motion";
 import {
   ArrowUpRight,
-  Layers,
+  Bot,
   Link2,
   ShieldCheck,
   Sparkles,
@@ -87,10 +87,10 @@ const ORBITS = [
 ];
 
 const SERVICES: Service[] = [
-  { name: "Fintech", Icon: ShieldCheck, ring: 0, angle: 20, desc: "Payments · ledgers · cards" },
-  { name: "Web3", Icon: Link2, ring: 1, angle: 60, desc: "Wallets · protocols · L2" },
-  { name: "AI Agents", Icon: Sparkles, ring: 1, angle: 220, desc: "Voice · chat · copilots" },
-  { name: "Applications", Icon: Layers, ring: 2, angle: 140, desc: "Web & mobile at scale" },
+  { name: "AI Agents", Icon: Sparkles, ring: 0, angle: 20, desc: "Voice · chat · copilots" },
+  { name: "Bots", Icon: Bot, ring: 1, angle: 60, desc: "Workflow · RPA · ops" },
+  { name: "Fintech", Icon: ShieldCheck, ring: 1, angle: 220, desc: "Payments · ledgers · KYC" },
+  { name: "Web3", Icon: Link2, ring: 2, angle: 140, desc: "Wallets · protocols · L2" },
 ];
 
 function Ring({ r, dur, dir }: { r: number; dur: number; dir: 1 | -1 }) {
@@ -370,7 +370,7 @@ export function Hero({ onContact, onSeeWork }: HeroProps) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.3 }}
           >
-            Senior-only teams for fintech, web3, and AI — built for India &amp; the Middle East.
+            DEXes, on-chain platforms, AI agents &amp; the bots that run them — engineered by a web3-native team.
           </motion.p>
 
           <motion.div

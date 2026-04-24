@@ -3,7 +3,7 @@
 import { motion, useReducedMotion } from "framer-motion";
 import { useState } from "react";
 
-const ITEMS = ["HDFC Labs", "Emirates NBD", "Polygon", "Razorpay", "STC Pay", "Zerodha", "Paytm", "Careem"];
+const ITEMS = ["Ethereum", "Solana", "Polygon", "Arbitrum", "Base", "OpenAI", "Anthropic", "Telegram", "Discord", "OpenClaw"];
 
 export function TrustBar() {
   const reduce = useReducedMotion();
@@ -13,7 +13,7 @@ export function TrustBar() {
   return (
     <div className="wn-trustbar">
       <div className="wn-container wn-trustbar-inner">
-        <span className="wn-caption">Trusted by teams at</span>
+        <span className="wn-caption">Engineered with</span>
         <div
           className="wn-trustbar-marquee"
           onMouseEnter={() => setPaused(true)}

@@ -75,8 +75,8 @@ export default function OpengraphImage() {
               maxWidth: 900,
             }}
           >
-            Senior-only pods for fintech, web3, AI agents, and web &amp; mobile —
-            built for India &amp; the GCC.
+            DEXes, on-chain platforms, AI agents &amp; the bots that run them —
+            engineered by a web3-native team.
           </div>
         </div>
 
@@ -91,7 +91,7 @@ export default function OpengraphImage() {
             textTransform: "uppercase",
           }}
         >
-          <div>Bengaluru · Dubai · Riyadh</div>
+          <div>AI · Fintech · Web3</div>
           <div>wonalab.com</div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useReducedMotion } from "framer-motion";
-import { ShieldCheck, Link2, Sparkles, Layers, type LucideIcon } from "lucide-react";
+import { Bot, Link2, ShieldCheck, Sparkles, type LucideIcon } from "lucide-react";
 import type { CSSProperties, MouseEvent } from "react";
 
 type Service = {
@@ -15,26 +15,26 @@ const SERVICES: Service[] = [
   {
     icon: ShieldCheck,
     eye: "Fintech",
-    title: "Payments, ledgers, cards",
-    body: "Regulated-grade backends. Real-time settlement. From RBI sandboxes to GCC licenses.",
+    title: "Payments, ledgers & integrations",
+    body: "Regulated-grade backends, real-time settlement, and core-banking integrations — sandbox to license-grade production.",
   },
   {
     icon: Link2,
     eye: "Web3",
-    title: "On-chain products",
-    body: "Wallets, marketplaces, and protocol UX. Solidity, Solana, and L2 integrations.",
+    title: "DEXes & on-chain platforms",
+    body: "Concentrated-liquidity DEXes, AMMs, launchpads, staking vaults, bridges — engineered by a team that's been on-chain since launch.",
   },
   {
     icon: Sparkles,
-    eye: "AI Agents",
-    title: "Customer & back-office agents",
-    body: "Voice, chat, and copilots in English, Hindi, and Arabic. Production-ready.",
+    eye: "AI",
+    title: "Agents that think, not just answer",
+    body: "AI chatbots, voice agents, copilots, and OpenClaw integrations — multi-LLM, model-agnostic, running in production from day one.",
   },
   {
-    icon: Layers,
-    eye: "Applications",
-    title: "Web & mobile at scale",
-    body: "Design-led iOS, Android, and Next.js apps. From 0→1 and 1→100.",
+    icon: Bot,
+    eye: "Bots",
+    title: "Telegram & Discord, end-to-end",
+    body: "Trading bots, community ops, NFT gating, automation flows. We build where your users actually live.",
   },
 ];
 
@@ -64,9 +64,6 @@ function ServiceCard({ service, index }: { service: Service; index: number }) {
       <div className="wn-service-eye">{service.eye}</div>
       <h3 className="wn-service-title">{service.title}</h3>
       <p className="wn-service-body">{service.body}</p>
-      <a className="wn-link">
-        Learn more <span className="wn-arrow">→</span>
-      </a>
     </motion.article>
   );
 }
@@ -92,7 +89,7 @@ export function Services() {
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
           >
-            Four practices. <em>One team.</em>
+            Four services. <em>One team.</em>
           </motion.h2>
         </div>
         <div className="wn-grid-4">

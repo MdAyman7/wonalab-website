@@ -3,10 +3,10 @@
 import { motion, useReducedMotion } from "framer-motion";
 
 const PILLARS = [
-  { num: "01", title: "Senior-only pods", body: "No juniors learning on your budget. Every teammate has shipped regulated systems before." },
-  { num: "02", title: "Compliance on day one", body: "We read RBI circulars and SAMA rulebooks. Legal framing shapes the first sprint, not the last." },
-  { num: "03", title: "Ship in weeks", body: "Our first commit is in your repo by end of week one. Working software, not slide decks." },
-  { num: "04", title: "Stay past launch", body: "We cover you through the first scale crisis. Then we hand over, cleanly." },
+  { num: "01", title: "Web3-native team", body: "Every engineer has shipped on-chain. We've lived through bear markets, exploits, and L2 migrations — the system isn't theory." },
+  { num: "02", title: "Edge-first engineering", body: "We build where the docs run out. AI, on-chain, and integration work most teams quote out of scope." },
+  { num: "03", title: "Ship in weeks, not quarters", body: "First commit is in your repo by end of week one. Working code in staging by week three. No slide decks." },
+  { num: "04", title: "Stay past launch", body: "We run the first 90 days in production with you, then hand over a system your team can actually own." },
 ];
 
 export function Approach() {
@@ -31,7 +31,7 @@ export function Approach() {
             viewport={{ once: true }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           >
-            Four principles. <em>Non-negotiable.</em>
+            How we work. <em>Non-negotiable.</em>
           </motion.h2>
         </div>
         <div className="wn-pillars">

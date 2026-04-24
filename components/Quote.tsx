@@ -23,8 +23,8 @@ export function Quote() {
           viewport={{ once: true }}
           transition={{ duration: 0.9, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
         >
-          Wonalab shipped our ledger in <em>eleven weeks</em>. It's been running clean
-          for fourteen months. Their team thinks like operators, not vendors.
+          We don't ship slide decks. We ship <em>systems</em> — running in production
+          from day one, owned by your team by day ninety.
         </motion.blockquote>
         <motion.div
           className="wn-quote-attr"
@@ -33,8 +33,8 @@ export function Quote() {
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          <div className="wn-quote-name">Rhea Kapoor</div>
-          <div className="wn-quote-role">CTO, Finhaven NBFC</div>
+          <div className="wn-quote-name">The Wonalab team</div>
+          <div className="wn-quote-role">Engineering principle №1</div>
         </motion.div>
       </div>
     </section>

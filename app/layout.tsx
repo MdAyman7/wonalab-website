@@ -2,9 +2,9 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 const SITE_URL = "https://wonalab.com";
-const TITLE = "Wonalab — Fintech, Web3 & AI product studio";
+const TITLE = "Wonalab — Web3-native engineering for AI, on-chain & fintech";
 const DESCRIPTION =
-  "Senior-only pods shipping fintech, web3, AI agents, and web & mobile apps for regulated markets across India and the GCC.";
+  "DEXes, on-chain platforms, AI agents, OpenClaw integrations, and Telegram & Discord bots — engineered by a web3-native team for regulated markets.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -15,37 +15,31 @@ export const metadata: Metadata = {
   description: DESCRIPTION,
   applicationName: "Wonalab",
   keywords: [
-    "fintech product studio",
-    "web3 development agency",
-    "AI agents development",
-    "regulated software India",
-    "GCC fintech engineering",
-    "Bengaluru product studio",
-    "Dubai software agency",
-    "Riyadh fintech developers",
-    "RBI sandbox engineering",
-    "SAMA compliance software",
-    "cross-border payments platform",
-    "KYC and onboarding platform",
-    "Solidity Solana developers",
-    "Next.js iOS Android studio",
+    "DEX development company",
+    "on-chain platform development",
+    "smart contract engineering",
+    "AMM and order-book exchange development",
+    "EVM and Solana development",
+    "Telegram bot development",
+    "Discord bot development",
+    "AI agent development services",
+    "AI chatbot development",
+    "OpenClaw integration partner",
+    "fintech development services",
+    "web3-native engineering team",
+    "smart contract audits and engineering",
+    "self-custody wallet development",
+    "AI-powered products",
   ],
   authors: [{ name: "Wonalab", url: SITE_URL }],
   creator: "Wonalab",
   publisher: "Wonalab Pvt. Ltd.",
   alternates: {
     canonical: "/",
-    languages: {
-      "en-IN": "/",
-      "en-AE": "/",
-      "en-SA": "/",
-      "x-default": "/",
-    },
   },
   openGraph: {
     type: "website",
-    locale: "en_IN",
-    alternateLocale: ["en_AE", "en_SA", "en_GB", "en_US"],
+    locale: "en",
     url: SITE_URL,
     siteName: "Wonalab",
     title: TITLE,
@@ -105,30 +99,17 @@ const organizationJsonLd = {
   description: DESCRIPTION,
   foundingDate: "2017",
   priceRange: "$$$",
-  address: [
-    { "@type": "PostalAddress", addressLocality: "Bengaluru", addressRegion: "Karnataka", addressCountry: "IN" },
-    { "@type": "PostalAddress", addressLocality: "Dubai", addressCountry: "AE" },
-    { "@type": "PostalAddress", addressLocality: "Riyadh", addressCountry: "SA" },
-  ],
-  areaServed: [
-    { "@type": "Country", name: "India" },
-    { "@type": "Country", name: "United Arab Emirates" },
-    { "@type": "Country", name: "Saudi Arabia" },
-    { "@type": "Country", name: "Qatar" },
-    { "@type": "Country", name: "Bahrain" },
-    { "@type": "Country", name: "Oman" },
-    { "@type": "Country", name: "Kuwait" },
-  ],
   knowsAbout: [
-    "Fintech engineering",
-    "Payments and ledgers",
-    "Web3 and on-chain product",
+    "Decentralized exchanges (DEX, AMM, order-book)",
+    "On-chain platforms and protocols",
+    "EVM and Solana engineering",
+    "Token launchpads, staking, and vaults",
     "AI agents and copilots",
-    "Regulated software",
-    "iOS and Android development",
-    "Next.js web applications",
-    "RBI sandbox",
-    "SAMA compliance",
+    "AI-powered chatbots",
+    "Telegram and Discord bots",
+    "OpenClaw integrations",
+    "Fintech engineering",
+    "Self-custody wallet development",
   ],
   hasOfferCatalog: {
     "@type": "OfferCatalog",
@@ -138,32 +119,32 @@ const organizationJsonLd = {
         "@type": "Offer",
         itemOffered: {
           "@type": "Service",
+          name: "DEXes & on-chain platforms",
+          description: "Concentrated-liquidity DEXes, AMMs, order-book exchanges, launchpads, staking vaults, and bridges across EVM chains and Solana.",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "AI agents, chatbots & OpenClaw integrations",
+          description: "Voice, chat, and copilot agents wired to your data — including OpenClaw integrations across messaging apps. Multi-LLM, model-agnostic, production-ready.",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Telegram & Discord bots",
+          description: "Trading bots, community ops, NFT verification, and automation flows — built where your users actually are.",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
           name: "Fintech engineering",
-          description: "Payments, ledgers, and cards. Regulated-grade backends, real-time settlement, RBI sandboxes to GCC licenses.",
-        },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Web3 product development",
-          description: "Wallets, marketplaces, and protocol UX. Solidity, Solana, and L2 integrations.",
-        },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "AI agents",
-          description: "Customer and back-office voice, chat, and copilots in English, Hindi, and Arabic.",
-        },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Web and mobile applications",
-          description: "Design-led iOS, Android, and Next.js apps from 0→1 and 1→100.",
+          description: "Payments, ledgers, KYC, and core-banking integrations — sandbox to license-grade production.",
         },
       },
     ],
@@ -173,7 +154,6 @@ const organizationJsonLd = {
       "@type": "ContactPoint",
       contactType: "sales",
       email: "hello@wonalab.com",
-      areaServed: ["IN", "AE", "SA", "QA", "BH", "OM", "KW"],
       availableLanguage: ["English", "Hindi", "Arabic"],
     },
   ],

@@ -75,7 +75,7 @@ export function ContactDrawer({ open, onClose }: Props) {
                     rows={4}
                     value={form.brief}
                     onChange={(e) => setForm({ ...form, brief: e.target.value })}
-                    placeholder="A few sentences — product, market, timeline."
+                    placeholder="A few sentences — what you need (agent, bot, integration), market, timeline."
                   />
                 </div>
                 <button className="wn-btn wn-btn-primary wn-btn-lg" onClick={() => setStep(1)}>
@@ -91,7 +91,7 @@ export function ContactDrawer({ open, onClose }: Props) {
                 <h2 className="wn-drawer-title">Received.</h2>
                 <p className="wn-body">
                   We'll reply within 48 hours, usually sooner. If urgent, write{" "}
-                  <span className="wn-mono">priority@wonalab.co</span>.
+                  <span className="wn-mono">priority@wonalab.com</span>.
                 </p>
                 <button className="wn-btn wn-btn-ghost" onClick={onClose}>
                   Close

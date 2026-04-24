@@ -4,21 +4,21 @@ import { motion, useReducedMotion } from "framer-motion";
 
 const POSTS = [
   {
-    eye: "Engineering",
+    eye: "Web3",
     date: "Mar 2026",
-    title: "Why we switched our ledger from Postgres to a purpose-built append-only store",
+    title: "Building DEXes that don't break under load — concentrated liquidity in production",
     read: "8 min",
   },
   {
-    eye: "Design",
+    eye: "Bots",
     date: "Feb 2026",
-    title: "Designing KYC for 14 languages: lessons from four GCC markets",
+    title: "Telegram bot architecture for high-throughput trading communities",
     read: "6 min",
   },
   {
-    eye: "Opinion",
+    eye: "Fintech",
     date: "Jan 2026",
-    title: "The case against staff augmentation for regulated products",
+    title: "OpenClaw integrations: what we learned shipping them in production",
     read: "5 min",
   },
 ];

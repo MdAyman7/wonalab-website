@@ -2,10 +2,10 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Wonalab — Fintech, Web3 & AI product studio",
+    name: "Wonalab — Web3-native engineering for AI, on-chain & fintech",
     short_name: "Wonalab",
     description:
-      "Senior-only pods shipping fintech, web3, AI agents, and web & mobile apps for regulated markets across India and the GCC.",
+      "DEXes, on-chain platforms, AI agents, OpenClaw integrations, and Telegram & Discord bots — engineered by a web3-native team.",
     start_url: "/",
     display: "standalone",
     background_color: "#06090F",

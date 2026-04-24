@@ -11,11 +11,12 @@ export function Footer() {
         </div>
         <div className="wn-footer-cols">
           <div>
-            <div className="wn-footer-h">Practices</div>
+            <div className="wn-footer-h">Services</div>
+            <a>AI Agents</a>
+            <a>Bots & Automation</a>
             <a>Fintech</a>
             <a>Web3</a>
-            <a>AI Agents</a>
-            <a>Applications</a>
+            <a>OpenClaw Integrations</a>
           </div>
           <div>
             <div className="wn-footer-h">Studio</div>
@@ -25,17 +26,16 @@ export function Footer() {
             <a>Careers</a>
           </div>
           <div>
-            <div className="wn-footer-h">Offices</div>
-            <a>Bengaluru, IN</a>
-            <a>Dubai, UAE</a>
-            <a>Riyadh, KSA</a>
+            <div className="wn-footer-h">Contact</div>
+            <a>hello@wonalab.com</a>
+            <a>priority@wonalab.com</a>
           </div>
         </div>
       </div>
       <div className="wn-footer-bottom">
         <div className="wn-container wn-footer-bottom-inner">
           <span className="wn-caption">© 2026 Wonalab Pvt. Ltd.</span>
-          <span className="wn-caption">Built in Bengaluru · Dubai · Riyadh</span>
+          <span className="wn-caption">Digital, crafted.</span>
         </div>
       </div>
     </footer>

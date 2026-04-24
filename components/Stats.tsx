@@ -6,10 +6,10 @@ import { useEffect, useRef } from "react";
 type Stat = { num: string; unit?: string; label: string };
 
 const STATS: Stat[] = [
-  { num: "9", unit: "yrs", label: "Shipping regulated software" },
-  { num: "46", label: "Engineers, designers, PMs" },
-  { num: "3", label: "Offices across IN & GCC" },
-  { num: "$2B", unit: "+", label: "Transacted on our platforms" },
+  { num: "100", unit: "%", label: "Web3-native team" },
+  { num: "20", unit: "+", label: "AI agents & bots in production" },
+  { num: "10", unit: "+", label: "On-chain platforms shipped" },
+  { num: "24/7", label: "Always-on operations" },
 ];
 
 function StatCell({ stat, index }: { stat: Stat; index: number }) {
