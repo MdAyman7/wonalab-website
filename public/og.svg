@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <radialGradient id="orb" cx="50%" cy="42%" r="45%">
+      <stop offset="0%" stop-color="#E5B65C" stop-opacity="0.25"/>
+      <stop offset="55%" stop-color="#E5B65C" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#06090F" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F7D98A"/>
+      <stop offset="50%" stop-color="#E5B65C"/>
+      <stop offset="100%" stop-color="#C69740"/>
+    </linearGradient>
+    <pattern id="jaali" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+      <g stroke="#E5B65C" stroke-width="0.6" fill="none" opacity="0.28">
+        <path d="M50 10 L60 40 L90 50 L60 60 L50 90 L40 60 L10 50 L40 40 Z"/>
+        <path d="M50 25 L55 45 L75 50 L55 55 L50 75 L45 55 L25 50 L45 45 Z"/>
+      </g>
+    </pattern>
+    <mask id="patternFade">
+      <rect width="1200" height="630" fill="url(#fadeMask)"/>
+    </mask>
+    <linearGradient id="fadeMask" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0.15"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="#06090F"/>
+  <rect width="1200" height="630" fill="url(#jaali)" mask="url(#patternFade)" opacity="0.25"/>
+  <rect width="1200" height="630" fill="url(#orb)"/>
+
+  <g transform="translate(80 90)">
+    <rect x="0" y="0" width="14" height="14" transform="rotate(45 7 7)" fill="url(#gold)"/>
+    <text x="28" y="14" font-family="Geist, 'Helvetica Neue', Arial, sans-serif" font-weight="600" font-size="22" fill="#F4EEDF" letter-spacing="-0.5">wonalab</text>
+  </g>
+
+  <g transform="translate(80 230)">
+    <text font-family="Geist, 'Helvetica Neue', Arial, sans-serif" font-weight="600" font-size="76" fill="#F4EEDF" letter-spacing="-2">
+      <tspan x="0" y="0">Digital products</tspan>
+      <tspan x="0" y="92">that </tspan>
+      <tspan font-family="'Instrument Serif', Georgia, serif" font-style="italic" font-weight="400" fill="#E5B65C">ship</tspan>
+      <tspan>.</tspan>
+    </text>
+    <text x="0" y="232" font-family="Geist, 'Helvetica Neue', Arial, sans-serif" font-size="26" fill="#B9B3A3" letter-spacing="-0.4">
+      Built for regulated markets · India &amp; the Middle East.
+    </text>
+  </g>
+
+  <g transform="translate(80 540)">
+    <text font-family="Geist, 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#6F6A5D" letter-spacing="2" text-transform="uppercase">
+      <tspan>FINTECH · WEB3 · AI AGENTS · APPLICATIONS</tspan>
+    </text>
+  </g>
+
+  <g transform="translate(1050 540)">
+    <text text-anchor="end" font-family="'Instrument Serif', Georgia, serif" font-style="italic" font-size="22" fill="#E5B65C" x="70">wonalab.com</text>
+  </g>
+</svg>

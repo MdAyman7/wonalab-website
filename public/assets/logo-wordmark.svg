@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" fill="none">
+  
+  <g font-family="Geist, sans-serif" font-weight="600" font-size="44" letter-spacing="-1.2" fill="currentColor">
+    <text x="0" y="54">wonalab</text>
+  </g>
+  
+  <g transform="translate(58, 10)" fill="#E5B65C">
+    <path d="M6 0 L12 6 L6 12 L0 6 Z"></path>
+  </g>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  
+  <defs>
+    <pattern id="kundan" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+      <g stroke="currentColor" stroke-width="0.6" fill="none" opacity="0.5">
+        <path d="M30 0 L60 30 L30 60 L0 30 Z"></path>
+        <path d="M30 12 L48 30 L30 48 L12 30 Z"></path>
+        <circle cx="30" cy="30" r="2.2" fill="currentColor" stroke="none"></circle>
+        <path d="M0 0 L12 0 M0 0 L0 12 M60 60 L48 60 M60 60 L60 48"></path>
+      </g>
+    </pattern>
+  </defs>
+  <rect width="120" height="120" fill="url(#kundan)"></rect>
+</svg>
