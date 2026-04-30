@@ -1,7 +1,6 @@
 "use client";
 
 import { motion, useReducedMotion } from "framer-motion";
-import { ArrowUpRight } from "lucide-react";
 
 type CaseItem = {
   eye: string;
@@ -60,7 +59,7 @@ export function CaseStudies() {
         </motion.div>
         <div className="wn-cases">
           {CASES.map((c, i) => (
-            <motion.a
+            <motion.div
               key={c.title}
               className="wn-case"
               initial={reduce ? false : { opacity: 0, y: 24 }}
@@ -76,10 +75,7 @@ export function CaseStudies() {
                 <div className="wn-stat-num">{c.stat}</div>
                 <div className="wn-stat-label">{c.statLabel}</div>
               </div>
-              <div className="wn-case-arrow">
-                <ArrowUpRight size={20} strokeWidth={1.6} />
-              </div>
-            </motion.a>
+            </motion.div>
           ))}
         </div>
       </div>

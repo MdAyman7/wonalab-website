@@ -522,22 +522,17 @@ em { font-family: var(--font-display); font-style: normal; font-weight: 600; col
 /* Case studies */
 .wn-cases { display: flex; flex-direction: column; border-top: 1px solid var(--border-subtle); position: relative; }
 .wn-case {
-  display: grid; grid-template-columns: 1fr auto 48px;
+  display: grid; grid-template-columns: 1fr auto;
   gap: 32px; align-items: center;
   padding: 28px 8px;
   border-bottom: 1px solid var(--border-subtle);
   position: relative;
-  transition: padding var(--dur-base) var(--ease-out), background var(--dur-base) var(--ease-out);
 }
-.wn-case:hover { padding-left: 24px; padding-right: 24px; background: rgba(255,153,102,0.03); }
 .wn-case-eye { font-size: 10px; color: var(--fg-tertiary); text-transform: uppercase; letter-spacing: var(--ls-wider); margin-bottom: 6px; }
-.wn-case-title { font-size: 24px; font-weight: 600; margin: 0; letter-spacing: -0.01em; line-height: 1.2; transition: color var(--dur-base) var(--ease-out); }
-.wn-case:hover .wn-case-title { color: var(--fg-accent); }
+.wn-case-title { font-size: 24px; font-weight: 600; margin: 0; letter-spacing: -0.01em; line-height: 1.2; }
 .wn-case-stat { text-align: right; }
 .wn-stat-num { font-family: var(--font-display); font-style: normal; font-weight: 600; font-size: 44px; letter-spacing: -0.02em; color: var(--fg-accent); line-height: 1; font-feature-settings: "tnum","lnum"; }
 .wn-stat-label { font-size: 11px; color: var(--fg-tertiary); text-transform: uppercase; letter-spacing: var(--ls-wider); margin-top: 4px; }
-.wn-case-arrow { display: flex; align-items: center; justify-content: flex-end; color: var(--fg-accent); transition: transform var(--dur-base) var(--ease-out); }
-.wn-case:hover .wn-case-arrow { transform: translate(4px, -4px); color: var(--fg-accent); }
 
 /* Stats */
 .wn-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; }
@@ -734,7 +729,7 @@ em { font-family: var(--font-display); font-style: normal; font-weight: 600; col
 @media (max-width: 1100px) {
   .wn-hero-grid { grid-template-columns: 1fr; gap: 48px; }
   .wn-hero-text { max-width: 720px; }
-  .wn-spot { max-width: 460px; }
+  .wn-spot { max-width: 520px; }
   .wn-spot-card { min-height: 420px; }
 }
 @media (max-width: 900px) {
@@ -764,8 +759,14 @@ em { font-family: var(--font-display); font-style: normal; font-weight: 600; col
   .wn-footer-inner { grid-template-columns: 1fr; gap: 40px; padding-bottom: 40px; }
   .wn-footer-cols { grid-template-columns: 1fr 1fr; }
   .wn-footer-bottom-inner { flex-direction: column; gap: 6px; text-align: center; align-items: center; }
-  .wn-trustbar-inner { flex-direction: column; align-items: flex-start; gap: 16px; }
-  .wn-drawer { padding: 40px 24px; }
+
+  /* Trustbar: parent goes column at this size, so the marquee must be told to take full width
+     (flex:1 only stretches the main axis, which is now vertical). */
+  .wn-trustbar { padding: 24px 0; }
+  .wn-trustbar-inner { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .wn-trustbar-marquee { width: 100%; min-width: 0; flex: 0 1 auto; }
+  .wn-trustbar-track { gap: 40px; }
+  .wn-trustbar-logo { font-size: 16px; }
 }
 @media (max-width: 540px) {
   .wn-container { padding: 0 20px; }
@@ -775,10 +776,50 @@ em { font-family: var(--font-display); font-style: normal; font-weight: 600; col
   .wn-btn-lg { padding: 14px 22px; font-size: 15px; }
   .wn-grid-4 { grid-template-columns: 1fr; }
   .wn-stats { grid-template-columns: 1fr; }
-  .wn-spot-card { min-height: 360px; }
-  .wn-footer-cols { grid-template-columns: 1fr; }
+
+  .wn-section { padding: 56px 0; }
+  .wn-section-head { margin-bottom: 32px; }
   .wn-section-title { font-size: clamp(26px, 6vw, 34px); }
+  .wn-cta-section { padding: 64px 0; }
   .wn-cta-title { font-size: clamp(32px, 8vw, 44px); }
+
+  /* Spotlight: tighten the card and stack the foot row so dots + hint don't crowd. */
+  .wn-spot-card { min-height: 380px; padding: 20px; }
+  .wn-spot-stat-num { font-size: 40px; }
+  .wn-spot-name { font-size: 22px; }
+  .wn-spot-head { margin-bottom: 20px; }
+  .wn-spot-foot { flex-direction: column; align-items: flex-start; gap: 10px; margin-top: 20px; padding-top: 16px; }
+  .wn-spot-tag { height: 26px; padding: 0 10px; font-size: 11px; }
+
+  /* Trustbar: shrink gap and font so a few items always fit on screen. */
+  .wn-trustbar-track { gap: 28px; }
+  .wn-trustbar-logo { font-size: 14px; }
+
+  /* Stats / approach / quote / process: scale type for smaller phones. */
+  .wn-stat-big-num { font-size: 54px; }
+  .wn-stat-big-unit { font-size: 22px; }
+  .wn-stat-num { font-size: 34px; }
+  .wn-pillar-num { font-size: 44px; min-width: 52px; }
+  .wn-pillar-title { font-size: 19px; }
+  .wn-quote-text { font-size: 18px; }
+  .wn-quote-mark { font-size: 76px; }
+  .wn-step-title { font-size: 19px; }
+  .wn-step-wk { padding-right: 0; }
+
+  .wn-case { padding: 20px 4px; }
+
+  /* Hero CTA: full-width buttons on phones for easier tap targets. */
+  .wn-hero-cta { width: 100%; }
+  .wn-hero-cta .wn-btn { flex: 1 1 100%; justify-content: center; }
+
+  .wn-footer-cols { grid-template-columns: 1fr; }
+  .wn-footer-inner { padding-bottom: 32px; }
+}
+
+/* Large monitors: keep desktop layout; only widen the container slightly so the
+   site doesn't feel cramped at the center on 1440+ displays. */
+@media (min-width: 1600px) {
+  .wn-container { max-width: 1360px; }
 }
 
 /* Reduced motion */
