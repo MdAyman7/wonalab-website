@@ -22,7 +22,7 @@ export function Nav({ active, onNav }: NavProps) {
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
     >
       <a className="wn-logo" onClick={() => onNav("home")}>
-        <span className="wn-diamond" />
+        <img className="wn-diamond" src="/logo.svg" alt="" />
         <span>wonalab</span>
       </a>
       <div className="wn-nav-links">

@@ -4,7 +4,7 @@ export function Footer() {
       <div className="wn-container wn-footer-inner">
         <div className="wn-footer-brand">
           <div className="wn-logo-big">
-            <span className="wn-diamond" />
+            <img className="wn-diamond" src="/logo.svg" alt="" />
             <span>wonalab</span>
           </div>
           <p className="wn-footer-tag">Digital, crafted.</p>
