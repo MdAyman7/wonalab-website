@@ -11,7 +11,6 @@ const links = [
   { id: "work", label: "Work" },
   { id: "services", label: "Services" },
   { id: "about", label: "About" },
-  { id: "journal", label: "Journal" },
 ];
 
 export function Nav({ active, onNav }: NavProps) {

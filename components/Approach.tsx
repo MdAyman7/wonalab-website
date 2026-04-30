@@ -3,8 +3,8 @@
 import { motion, useReducedMotion } from "framer-motion";
 
 const PILLARS = [
-  { num: "01", title: "Web3-native team", body: "Every engineer has shipped on-chain. We've lived through bear markets, exploits, and L2 migrations — the system isn't theory." },
-  { num: "02", title: "Edge-first engineering", body: "We build where the docs run out. AI, on-chain, and integration work most teams quote out of scope." },
+  { num: "01", title: "Senior team, end-to-end", body: "No juniors learning on your project. Every engineer ships product, owns their work, and writes the code that goes to prod." },
+  { num: "02", title: "Edge-first engineering", body: "We build where the docs run out. AI, fintech, and integration work most teams quote out of scope." },
   { num: "03", title: "Ship in weeks, not quarters", body: "First commit is in your repo by end of week one. Working code in staging by week three. No slide decks." },
   { num: "04", title: "Stay past launch", body: "We run the first 90 days in production with you, then hand over a system your team can actually own." },
 ];

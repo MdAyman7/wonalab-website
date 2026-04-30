@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Wonalab — Digital products that ship, scale, endure.";
+export const alt = "Wonalab. Digital products that ship, scale, endure.";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -16,8 +16,8 @@ export default function OpengraphImage() {
           justifyContent: "space-between",
           padding: "80px",
           background:
-            "radial-gradient(1200px 600px at 80% 0%, rgba(229,182,92,0.18), transparent 60%), radial-gradient(900px 500px at 0% 100%, rgba(229,182,92,0.10), transparent 55%), #06090F",
-          color: "#F4EEDF",
+            "radial-gradient(1200px 600px at 80% 0%, rgba(255,153,102,0.20), transparent 60%), radial-gradient(900px 500px at 0% 100%, rgba(255,153,102,0.12), transparent 55%), #160B1E",
+          color: "#FAE9D3",
           fontFamily: "system-ui, -apple-system, Segoe UI, Roboto, sans-serif",
         }}
       >
@@ -27,11 +27,11 @@ export default function OpengraphImage() {
               width: 56,
               height: 56,
               borderRadius: 14,
-              background: "linear-gradient(135deg, #E5B65C, #C69740)",
+              background: "linear-gradient(135deg, #FF9966, #E8784A)",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              color: "#06090F",
+              color: "#160B1E",
               fontWeight: 700,
               fontSize: 30,
             }}
@@ -43,7 +43,7 @@ export default function OpengraphImage() {
               fontSize: 28,
               fontWeight: 500,
               letterSpacing: "0.04em",
-              color: "#F4EEDF",
+              color: "#FAE9D3",
             }}
           >
             wonalab
@@ -57,13 +57,13 @@ export default function OpengraphImage() {
               lineHeight: 1.05,
               fontWeight: 600,
               letterSpacing: "-0.02em",
-              color: "#F4EEDF",
+              color: "#FAE9D3",
               display: "flex",
               flexWrap: "wrap",
             }}
           >
             <span>Digital products that&nbsp;</span>
-            <span style={{ color: "#E5B65C", fontStyle: "italic", fontWeight: 500 }}>
+            <span style={{ color: "#FF9966", fontWeight: 600 }}>
               ship.
             </span>
           </div>
@@ -71,12 +71,12 @@ export default function OpengraphImage() {
             style={{
               fontSize: 30,
               lineHeight: 1.4,
-              color: "#B9B3A3",
+              color: "#C4A89A",
               maxWidth: 900,
             }}
           >
-            DEXes, on-chain platforms, AI agents &amp; the bots that run them —
-            engineered by a web3-native team.
+            AI agents, fintech tools, and SaaS web &amp; mobile apps,
+            engineered by a small, senior team.
           </div>
         </div>
 
@@ -85,13 +85,13 @@ export default function OpengraphImage() {
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
-            color: "#6F6A5D",
+            color: "#7E6B65",
             fontSize: 22,
             letterSpacing: "0.12em",
             textTransform: "uppercase",
           }}
         >
-          <div>AI · Fintech · Web3</div>
+          <div>AI · Fintech · SaaS</div>
           <div>wonalab.com</div>
         </div>
       </div>

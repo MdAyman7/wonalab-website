@@ -6,9 +6,9 @@ import { useEffect, useRef } from "react";
 type Stat = { num: string; unit?: string; label: string };
 
 const STATS: Stat[] = [
-  { num: "100", unit: "%", label: "Web3-native team" },
+  { num: "100", unit: "%", label: "Senior team, end-to-end" },
   { num: "20", unit: "+", label: "AI agents & bots in production" },
-  { num: "10", unit: "+", label: "On-chain platforms shipped" },
+  { num: "30", unit: "+", label: "Web & mobile apps shipped" },
   { num: "24/7", label: "Always-on operations" },
 ];
 

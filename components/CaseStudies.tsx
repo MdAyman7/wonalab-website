@@ -13,20 +13,6 @@ type CaseItem = {
 
 const CASES: CaseItem[] = [
   {
-    eye: "Web3",
-    title: "DEXes, AMMs & order-book exchanges",
-    stat: "On-chain",
-    statLabel: "EVM · Solana · L2s",
-    name: "DEXes",
-  },
-  {
-    eye: "Web3",
-    title: "Launchpads, staking, vaults & bridges",
-    stat: "L1+L2",
-    statLabel: "Built to scale",
-    name: "Platforms",
-  },
-  {
     eye: "AI",
     title: "Chatbots, voice agents & copilots",
     stat: "Multi-LLM",
@@ -34,8 +20,22 @@ const CASES: CaseItem[] = [
     name: "Agents",
   },
   {
+    eye: "Fintech",
+    title: "Payments, ledgers & KYC",
+    stat: "Real-time",
+    statLabel: "Sandbox to scale",
+    name: "Fintech",
+  },
+  {
+    eye: "SaaS",
+    title: "Web dashboards & mobile apps",
+    stat: "Web · iOS · Android",
+    statLabel: "End-to-end",
+    name: "SaaS",
+  },
+  {
     eye: "Bots",
-    title: "Telegram & Discord — trading, ops, community",
+    title: "Telegram, Discord & Slack: ops and automation",
     stat: "Always-on",
     statLabel: "Built where users live",
     name: "Bots",

@@ -23,7 +23,7 @@ export function Quote() {
           viewport={{ once: true }}
           transition={{ duration: 0.9, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
         >
-          We don't ship slide decks. We ship <em>systems</em> — running in production
+          We don't ship slide decks. We ship <em>systems</em>, running in production
           from day one, owned by your team by day ninety.
         </motion.blockquote>
         <motion.div

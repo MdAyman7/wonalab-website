@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useReducedMotion } from "framer-motion";
-import { Bot, Link2, ShieldCheck, Sparkles, type LucideIcon } from "lucide-react";
+import { Bot, LayoutDashboard, ShieldCheck, Sparkles, type LucideIcon } from "lucide-react";
 import type { CSSProperties, MouseEvent } from "react";
 
 type Service = {
@@ -13,28 +13,28 @@ type Service = {
 
 const SERVICES: Service[] = [
   {
-    icon: ShieldCheck,
-    eye: "Fintech",
-    title: "Payments, ledgers & integrations",
-    body: "Regulated-grade backends, real-time settlement, and core-banking integrations — sandbox to license-grade production.",
-  },
-  {
-    icon: Link2,
-    eye: "Web3",
-    title: "DEXes & on-chain platforms",
-    body: "Concentrated-liquidity DEXes, AMMs, launchpads, staking vaults, bridges — engineered by a team that's been on-chain since launch.",
-  },
-  {
     icon: Sparkles,
     eye: "AI",
     title: "Agents that think, not just answer",
-    body: "AI chatbots, voice agents, copilots, and OpenClaw integrations — multi-LLM, model-agnostic, running in production from day one.",
+    body: "AI chatbots, voice agents, and copilots. Multi-LLM, model-agnostic, running in production from day one.",
+  },
+  {
+    icon: ShieldCheck,
+    eye: "Fintech",
+    title: "Payments, ledgers & integrations",
+    body: "Production-grade backends, real-time settlement, and core-banking integrations, from sandbox to scale.",
+  },
+  {
+    icon: LayoutDashboard,
+    eye: "SaaS",
+    title: "Web & mobile apps, end-to-end",
+    body: "SaaS dashboards, native and cross-platform mobile apps, APIs, and the infra to run them.",
   },
   {
     icon: Bot,
     eye: "Bots",
-    title: "Telegram & Discord, end-to-end",
-    body: "Trading bots, community ops, NFT gating, automation flows. We build where your users actually live.",
+    title: "Telegram, Discord & Slack",
+    body: "Support bots, community ops, and internal automation flows. We build where your users actually live.",
   },
 ];
 

@@ -3,7 +3,7 @@
 import { motion, useReducedMotion } from "framer-motion";
 import { useState } from "react";
 
-const ITEMS = ["Ethereum", "Solana", "Polygon", "Arbitrum", "Base", "OpenAI", "Anthropic", "Telegram", "Discord", "OpenClaw"];
+const ITEMS = ["OpenAI", "Anthropic", "Next.js", "Vercel", "AWS", "Stripe", "Postgres", "Telegram", "Discord", "Slack"];
 
 export function TrustBar() {
   const reduce = useReducedMotion();

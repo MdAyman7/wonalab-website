@@ -10,18 +10,21 @@ import { Stats } from "@/components/Stats";
 import { Approach } from "@/components/Approach";
 import { Process } from "@/components/Process";
 import { Quote } from "@/components/Quote";
-import { Journal } from "@/components/Journal";
 import { CTA } from "@/components/CTA";
 import { Footer } from "@/components/Footer";
-import { ContactDrawer } from "@/components/ContactDrawer";
+
+const CONTACT_URL = "https://hdyo5tv97om.typeform.com/to/JFRPq3gK";
 
 export default function Home() {
   const [active, setActive] = useState("work");
-  const [contact, setContact] = useState(false);
+
+  const openContact = () => {
+    window.open(CONTACT_URL, "_blank", "noopener,noreferrer");
+  };
 
   const onNav = (id: string) => {
     if (id === "contact") {
-      setContact(true);
+      openContact();
       return;
     }
     if (id === "home") {
@@ -34,7 +37,7 @@ export default function Home() {
   };
 
   useEffect(() => {
-    const ids = ["work", "services", "about", "journal"];
+    const ids = ["work", "services", "about"];
     const obs = new IntersectionObserver(
       (entries) => {
         entries.forEach((e) => {
@@ -53,7 +56,7 @@ export default function Home() {
   return (
     <>
       <Nav active={active} onNav={onNav} />
-      <Hero onContact={() => setContact(true)} onSeeWork={() => onNav("work")} />
+      <Hero onContact={openContact} onSeeWork={() => onNav("work")} />
       <TrustBar />
       <section id="services"><Services /></section>
       <section id="work"><CaseStudies /></section>
@@ -61,10 +64,8 @@ export default function Home() {
       <section id="about"><Approach /></section>
       <Process />
       <Quote />
-      <section id="journal"><Journal /></section>
-      <CTA onContact={() => setContact(true)} />
+      <CTA onContact={openContact} />
       <Footer />
-      <ContactDrawer open={contact} onClose={() => setContact(false)} />
     </>
   );
 }

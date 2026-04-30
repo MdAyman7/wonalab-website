@@ -13,12 +13,12 @@ export default function Icon() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          background: "linear-gradient(135deg, #E5B65C, #C69740)",
-          color: "#06090F",
+          background: "linear-gradient(135deg, #FFAE82, #E8784A)",
+          color: "#160B1E",
           fontSize: 22,
           fontWeight: 700,
           fontFamily: "system-ui, -apple-system, Segoe UI, Roboto, sans-serif",
-          borderRadius: 6,
+          borderRadius: 9,
         }}
       >
         W

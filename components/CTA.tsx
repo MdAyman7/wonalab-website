@@ -17,7 +17,7 @@ export function CTA({ onContact }: { onContact: () => void }) {
           Building something at the edge? <em>Tell us.</em>
         </h2>
         <p className="wn-cta-body">
-          DEX, AI agent, OpenClaw integration, bot army — if it's web3, AI, or both, we want to see it. First call within 48 hours.
+          AI agent, fintech tool, SaaS web or mobile app. If you're building it, we want to see it. First call within 48 hours.
         </p>
         <a className="wn-btn wn-btn-primary wn-btn-lg" onClick={onContact}>
           Start a project <span className="wn-arrow">→</span>

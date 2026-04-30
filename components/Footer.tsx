@@ -12,23 +12,19 @@ export function Footer() {
         <div className="wn-footer-cols">
           <div>
             <div className="wn-footer-h">Services</div>
-            <a>AI Agents</a>
-            <a>Bots & Automation</a>
-            <a>Fintech</a>
-            <a>Web3</a>
-            <a>OpenClaw Integrations</a>
+            <a href="#services">AI Agents</a>
+            <a href="#services">Fintech</a>
+            <a href="#services">SaaS Web & Mobile</a>
+            <a href="#services">Bots & Automation</a>
           </div>
           <div>
             <div className="wn-footer-h">Studio</div>
-            <a>Work</a>
-            <a>About</a>
-            <a>Journal</a>
-            <a>Careers</a>
+            <a href="#work">Work</a>
+            <a href="#about">About</a>
           </div>
           <div>
             <div className="wn-footer-h">Contact</div>
-            <a>hello@wonalab.com</a>
-            <a>priority@wonalab.com</a>
+            <a href="mailto:contact@wonalab.com">contact@wonalab.com</a>
           </div>
         </div>
       </div>

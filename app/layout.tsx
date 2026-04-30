@@ -2,9 +2,9 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 const SITE_URL = "https://wonalab.com";
-const TITLE = "Wonalab — Web3-native engineering for AI, on-chain & fintech";
+const TITLE = "Wonalab. AI, fintech, and SaaS engineering";
 const DESCRIPTION =
-  "DEXes, on-chain platforms, AI agents, OpenClaw integrations, and Telegram & Discord bots — engineered by a web3-native team for regulated markets.";
+  "AI agents, fintech tools, and SaaS web & mobile apps, engineered by a small, senior team.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -15,20 +15,15 @@ export const metadata: Metadata = {
   description: DESCRIPTION,
   applicationName: "Wonalab",
   keywords: [
-    "DEX development company",
-    "on-chain platform development",
-    "smart contract engineering",
-    "AMM and order-book exchange development",
-    "EVM and Solana development",
+    "AI agent development",
+    "AI chatbot development",
+    "fintech engineering services",
+    "payments and ledger engineering",
+    "SaaS web application development",
+    "SaaS mobile application development",
     "Telegram bot development",
     "Discord bot development",
-    "AI agent development services",
-    "AI chatbot development",
-    "OpenClaw integration partner",
-    "fintech development services",
-    "web3-native engineering team",
-    "smart contract audits and engineering",
-    "self-custody wallet development",
+    "automation and workflow engineering",
     "AI-powered products",
   ],
   authors: [{ name: "Wonalab", url: SITE_URL }],
@@ -75,7 +70,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#06090F",
+  themeColor: "#160B1E",
   colorScheme: "dark",
   width: "device-width",
   initialScale: 1,
@@ -100,16 +95,14 @@ const organizationJsonLd = {
   foundingDate: "2017",
   priceRange: "$$$",
   knowsAbout: [
-    "Decentralized exchanges (DEX, AMM, order-book)",
-    "On-chain platforms and protocols",
-    "EVM and Solana engineering",
-    "Token launchpads, staking, and vaults",
     "AI agents and copilots",
     "AI-powered chatbots",
-    "Telegram and Discord bots",
-    "OpenClaw integrations",
     "Fintech engineering",
-    "Self-custody wallet development",
+    "Payments, ledgers, and KYC",
+    "SaaS web applications",
+    "SaaS mobile applications",
+    "Telegram and Discord bots",
+    "Automation and workflow engineering",
   ],
   hasOfferCatalog: {
     "@type": "OfferCatalog",
@@ -119,24 +112,8 @@ const organizationJsonLd = {
         "@type": "Offer",
         itemOffered: {
           "@type": "Service",
-          name: "DEXes & on-chain platforms",
-          description: "Concentrated-liquidity DEXes, AMMs, order-book exchanges, launchpads, staking vaults, and bridges across EVM chains and Solana.",
-        },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "AI agents, chatbots & OpenClaw integrations",
-          description: "Voice, chat, and copilot agents wired to your data — including OpenClaw integrations across messaging apps. Multi-LLM, model-agnostic, production-ready.",
-        },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Telegram & Discord bots",
-          description: "Trading bots, community ops, NFT verification, and automation flows — built where your users actually are.",
+          name: "AI agents, chatbots & copilots",
+          description: "Voice, chat, and copilot agents wired to your data. Multi-LLM, model-agnostic, production-ready.",
         },
       },
       {
@@ -144,7 +121,23 @@ const organizationJsonLd = {
         itemOffered: {
           "@type": "Service",
           name: "Fintech engineering",
-          description: "Payments, ledgers, KYC, and core-banking integrations — sandbox to license-grade production.",
+          description: "Payments, ledgers, KYC, and core-banking integrations, from sandbox to production.",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "SaaS web & mobile apps",
+          description: "End-to-end SaaS products: web dashboards, native and cross-platform mobile apps, APIs, and infra.",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Bots & automation",
+          description: "Telegram, Discord, and Slack bots, plus internal workflow automation built where your users live.",
         },
       },
     ],
@@ -153,7 +146,7 @@ const organizationJsonLd = {
     {
       "@type": "ContactPoint",
       contactType: "sales",
-      email: "hello@wonalab.com",
+      email: "contact@wonalab.com",
       availableLanguage: ["English", "Hindi", "Arabic"],
     },
   ],

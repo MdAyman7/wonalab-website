@@ -14,11 +14,12 @@ export default function AppleIcon() {
           alignItems: "center",
           justifyContent: "center",
           background:
-            "radial-gradient(120px 120px at 30% 20%, rgba(250,223,160,0.55), transparent 60%), linear-gradient(135deg, #E5B65C, #9A7528)",
-          color: "#06090F",
+            "radial-gradient(120px 120px at 30% 20%, rgba(255,200,166,0.6), transparent 60%), linear-gradient(135deg, #FFAE82, #C25A30)",
+          color: "#160B1E",
           fontSize: 110,
           fontWeight: 700,
           fontFamily: "system-ui, -apple-system, Segoe UI, Roboto, sans-serif",
+          borderRadius: 52,
         }}
       >
         W

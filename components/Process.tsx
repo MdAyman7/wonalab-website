@@ -135,10 +135,10 @@ export function Process() {
                                 ? "var(--fg-accent)"
                                 : "var(--bg-page)",
                               boxShadow: isActive
-                                ? "0 0 0 6px rgba(229,182,92,0.14), 0 0 20px rgba(229,182,92,0.45)"
+                                ? "0 0 0 6px rgba(255,153,102,0.14), 0 0 20px rgba(255,153,102,0.45)"
                                 : isReached
-                                  ? "0 0 10px rgba(229,182,92,0.35)"
-                                  : "0 0 0 0 rgba(229,182,92,0)",
+                                  ? "0 0 10px rgba(255,153,102,0.35)"
+                                  : "0 0 0 0 rgba(255,153,102,0)",
                             }
                       }
                       transition={{ duration: 0.4, ease: EASE }}
